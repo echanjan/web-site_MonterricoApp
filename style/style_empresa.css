@@ -1,0 +1,333 @@
+@import url(/style/style_index.css);
+@import url(/style/style_pasajero.css);
+
+/*----------------------
+    HERO 
+-----------------------*/
+
+.text-hide {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("/images/hero-empresa.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  height: 38vw;
+}
+
+.text-hero {
+  width: 90%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los elementos al borde izquierdo */
+}
+
+.text-hero .title {
+  color: var(--color-white);
+  font-size: var(--font-size-title-header);
+  line-height: var(--line-height-title-header);
+}
+
+.text-hero .subtitle {
+  margin: 0;
+  color: var(--color-white);
+  padding: 20px 0px 0px 0px; /* Ajusta según sea necesario */
+  font-size: var(--font-size-subtitle-header);
+  line-height: var(--line-height-subtitle-header);
+}
+
+/*----------------------
+    SLIDER 
+-----------------------*/
+
+.box-logos {
+  padding-top: var(--padding-large);
+  padding-bottom: var(--padding-large);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.box-logos-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.box-logos-slide img {
+  height: 30px;
+  margin: 0 40px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/*-----------
+    1240
+-------------*/
+
+@media screen and (max-width: 1024px) {
+  :root {
+    /*--web--*/
+    --color-principal: #08a33e;
+    --color-principal-opacy: #d5f7dd;
+    --color-secundario: #f8b80e;
+    --color-white: #ffffff;
+    --color-text: #122618;
+    --font-size-nav: 16px;
+    --font-size-title-header: 40px;
+    --font-size-subtitle-header: 20px;
+    --line-height-title-header: 40px;
+    --line-height-subtitle-header: 25px;
+    --font-size-button: 16px;
+    --font-size-section-title: 24px;
+    --font-weight-title-section: 400;
+    --line-height-title-section: 30px;
+    --font-size-section-subtitle: 20px;
+    --line-height-subtitle-section: 28px;
+    --font-size-text: 16px;
+    --line-height-text-section: 25px;
+    --font-size-header-section: 16px;
+    --font-size-footer: 16px;
+    --font-weight-footer-title: 400;
+    --font-weight-footer-text: 100;
+  }
+
+  main {
+    padding-top: 0vb;
+    z-index: 0;
+  }
+
+  /*NAV*/
+  nav .link-hide {
+    display: none;
+  }
+
+  nav .more {
+    display: flex;
+  }
+
+  /*HERO*/
+
+  .box-hero {
+    padding-top: 0px;
+  }
+
+  .text-hero .title {
+    display: none;
+  }
+
+  .text-hero .subtitle {
+    display: none;
+  }
+
+  .text-hide {
+    padding-bottom: var(--padding-large);;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text);
+  }
+
+  .text-hide .title {
+    font-size: var(--font-size-title-header);
+  }
+
+  .text-hide .subtitle {
+    font-size: var(--font-size-subtitle-header);
+  }
+}
+
+/*-----------
+    850
+-------------*/
+
+@media screen and (max-width: 850px) {
+  :root {
+    /*--web--*/
+    --color-principal: #08a33e;
+    --color-principal-opacy: #d5f7dd;
+    --color-secundario: #f8b80e;
+    --color-white: #ffffff;
+    --color-text: #122618;
+    --font-size-nav: 16px;
+    --font-size-title-header: 40px;
+    --font-size-subtitle-header: 20px;
+    --line-height-title-header: 40px;
+    --line-height-subtitle-header: 25px;
+    --font-size-button: 16px;
+    --font-size-section-title: 24px;
+    --font-weight-title-section: 400;
+    --line-height-title-section: 30px;
+    --font-size-section-subtitle: 20px;
+    --line-height-subtitle-section: 28px;
+    --font-size-text: 16px;
+    --line-height-text-section: 25px;
+    --font-size-header-section: 16px;
+    --font-size-footer: 16px;
+    --font-weight-footer-title: 400;
+    --font-weight-footer-text: 100;
+  }
+
+  header,
+  main {
+    padding: 0% 10%;
+  }
+
+  .app {
+    padding: 3% 0%;
+  }
+
+  .app img {
+    height: 60px;
+  }
+
+  /*----------------------
+      1 SECTION 3 PARTES 
+    -----------------------*/
+
+  .box-1S3P [class^="box-"] {
+    padding: 0;
+  }
+}
+
+/*-----------
+    600
+-------------*/
+
+@media screen and (max-width: 600px) {
+  :root {
+    /*--web--*/
+    --color-principal: #08a33e;
+    --color-principal-opacy: #d5f7dd;
+    --color-secundario: #f8b80e;
+    --color-white: #ffffff;
+    --color-text: #122618;
+    --font-size-nav: 16px;
+    --font-size-title-header: 40px;
+    --font-size-subtitle-header: 20px;
+    --line-height-title-header: 40px;
+    --line-height-subtitle-header: 25px;
+    --font-size-button: 16px;
+    --font-size-section-title: 24px;
+    --font-weight-title-section: 400;
+    --line-height-title-section: 30px;
+    --font-size-section-subtitle: 20px;
+    --line-height-subtitle-section: 28px;
+    --font-size-text: 16px;
+    --line-height-text-section: 25px;
+    --font-size-header-section: 16px;
+    --font-size-footer: 16px;
+    --font-weight-footer-title: 400;
+    --font-weight-footer-text: 100;
+  }
+
+  header {
+    padding: 0%;
+  }
+
+  main {
+    padding: 0% 5%;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  nav ul,
+  nav .icono {
+    display: none;
+  }
+
+  nav .mobile {
+    display: block;
+  }
+
+  /*----------------------
+      HERO 
+    -----------------------*/
+
+  .hero {
+    width: 90%;
+    height: 50vw;
+  }
+
+  /*----------------------
+      1 SECTION 3 PARTES 
+    -----------------------*/
+
+  .section-2S1P,
+  .section-2S2P {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box-2S1P {
+    width: 90vw;
+    margin-top: 5vw;
+  }
+
+  .section-2S1P .img-2S1P img,
+  .section-2S2P .img-2S1P img {
+    width: 90vw;
+    border-radius: 20px;
+  }
+
+  /*----------------------
+    SLIDER 
+-----------------------*/
+
+  .box-logos {
+    .box-logos-slide img {
+      height: 20px;
+    }
+  }
+
+  /*-----------
+      400
+  -------------*/
+
+  @media screen and (max-width: 400px) {
+    :root {
+      /*--web--*/
+      --color-principal: #08a33e;
+      --color-principal-opacy: #d5f7dd;
+      --color-secundario: #f8b80e;
+      --color-white: #ffffff;
+      --color-text: #122618;
+      --font-size-nav: 16px;
+      --font-size-title-header: 40px;
+      --font-size-subtitle-header: 20px;
+      --line-height-title-header: 40px;
+      --line-height-subtitle-header: 25px;
+      --font-size-button: 16px;
+      --font-size-section-title: 24px;
+      --font-weight-title-section: 400;
+      --line-height-title-section: 30px;
+      --font-size-section-subtitle: 20px;
+      --line-height-subtitle-section: 28px;
+      --font-size-text: 16px;
+      --line-height-text-section: 25px;
+      --font-size-header-section: 16px;
+      --font-size-footer: 16px;
+      --font-weight-footer-title: 400;
+      --font-weight-footer-text: 100;
+    }
+
+    .app img {
+      height: 50px;
+    }
+  }
+}
