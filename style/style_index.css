@@ -447,6 +447,8 @@ nav .mobile .links a:hover {
   align-self: center;
   justify-content: center;
   width: 30vw;
+  font-size: var(--font-size-text);
+  line-height: var(--line-height-text-section);
 }
 
 .section-2S1P .text-2S1P h1,
@@ -463,6 +465,9 @@ nav .mobile .links a:hover {
   font-size: var(--font-size-text);
   line-height: var(--line-height-text-section);
 }
+
+
+/*--
 
 .section-2S1P a,
 .section-2S2P a {
@@ -483,6 +488,32 @@ nav .mobile .links a:hover {
 
 .section-2S1P a:hover,
 .section-2S2P a:hover {
+  color: var(--color-text);
+}
+--*/
+
+
+
+.enlace-2S1P,
+.enlace-2S2P {
+  display: flex;
+  align-items: center;
+  color: var(--color-principal);
+  font-size: var(--font-size-text);
+  text-decoration: none;
+}
+
+.enlace-2S1P a,
+.enlace-2S2P a {
+  color: var(--color-principal);
+  font-size: var(--font-size-text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.enlace-2S1P:hover,
+.enlace-2S2P:hover {
   color: var(--color-text);
 }
 
