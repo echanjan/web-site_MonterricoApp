@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonterricoApp - PreguntasFrecuentes</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+    </style>
+    <link rel="stylesheet" href="/style/style_preguntas.css" />
+  </head>
+
+  <body>
+    <header>
+      <!--NAV-->
+
+      <nav>
+        <div class="mobile">
+          <div class="header">
+            <button id="bmenu">
+              <span class="material-icons">&#xe5d2;</span>
+            </button>
+            <a href="index.html">
+              <img
+                src="/images/logotipoMonterrico_512.png"
+                width="140px"
+                alt="MonterricoApp"
+              />
+            </a>
+            <div>
+              <a href="https://intranet.taximonterrico.pe/" target="_blank"
+                ><span class="material-icons">&#xea77;</span></a
+              >
+            </div>
+          </div>
+
+          <div class="links">
+            <a href="/pasajero.html">Pasajero</a>
+            <a href="/empresa.html">Empresa</a>
+            <a href="/conductor.html">Conductor</a>
+          </div>
+        </div>
+
+        <div class="icono">
+          <a href="/index.html">
+            <img
+              src="/images/logotipoMonterrico_512.png"
+              width="140px"
+              alt="MonterricoApp"
+            />
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="/pasajero.html" class="link link-hide">Pasajero</a>
+          </li>
+          <li>
+            <a href="/empresa.html" class="link link-hide">Empresa</a>
+          </li>
+          <li>
+            <a href="/conductor.html" class="link link-hide">Conductor</a>
+          </li>
+          <li class="more">
+            <a href="" class="link" id="bmore">Menú</a>
+            <div class="menu">
+              <a href="/pasajero.html">Pasajero</a>
+              <a href="/empresa.html">Empresa</a>
+              <a href="/conductor.html">Conductor</a>
+            </div>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a
+              href="https://intranet.taximonterrico.pe/"
+              target="_blank"
+              class="intranet"
+              >Intranet</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!--NAV-->
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+      <!-- Hero -->
+
+      <div class="text-hide">
+        <h1 class="title">
+          Explora la ciudad <br />
+          sin preocupaciones
+        </h1>
+        <p class="subtitle">
+          Descubre la libertad de explorar sin preocupaciones, <br />
+          asegurando tu comodidad y seguridad en cada viaje.
+        </p>
+      </div>
+      <div class="hero">
+        <div class="text-hero">
+          <h1 class="title">
+            Explora la ciudad <br />
+            sin preocupaciones
+          </h1>
+          <p class="subtitle">
+            Descubre la libertad de explorar sin preocupaciones, <br />
+            asegurando tu comodidad y seguridad en cada viaje.
+          </p>
+        </div>
+      </div>
+
+      <!--FAQ-->
+
+      <div class="FAQ">
+        <h1 class="titulo">Preguntas Frecuentes</h1>
+        <div class="categorias" id="categorias">
+          <div class="categoria activa" data-categoria="pasajero">
+            <span class="material-symbols-outlined">
+              person
+              </span>
+            <p>Pasajero</p>
+          </div>
+          <div class="categoria" data-categoria="empresa">
+            <span class="material-symbols-outlined">
+              work
+              </span>
+            </svg>
+            <p>Empresa</p>
+          </div>
+          <div class="categoria" data-categoria="conductor">
+            <span class="material-symbols-outlined">
+              directions_car
+              </span>
+            <p>Conductor</p>
+          </div>
+        </div>
+
+        <div class="preguntas">
+          <!-- Preguntas pasajero -->
+          <div class="contenedor-preguntas activo" data-categoria="pasajero">
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo puedo reservar un taxi corporativo?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Puede reservar un taxi corporativo a través de nuestra
+                aplicación móvil, sitio web o llamando o escribiendo a nuestro
+                servicio de atención al cliente.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuáles son los métodos de pago aceptados?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Aceptamos pagos en efectivo yape, plin, o por abono a cuenta.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo puedo saber la tarifa antes del viaje?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Puede conocer la tarifa estimada ingresando los detalles del
+                viaje en nuestra aplicación o sitio web, o solicitarla al
+                momento de comunicarse a nuestro servicio de atención al
+                cliente.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Ofrecen servicios de transporte para eventos corporativos o
+                grupos grandes?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Sí, proporcionamos servicios para eventos corporativos y grupos
+                grandes. Le recomendamos que reserve con anticipación para
+                garantizar la disponibilidad.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuáles son las medidas de seguridad implementadas en sus taxis
+                corporativos?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Todos nuestros conductores están debidamente registrados y
+                sometidos a verificaciones de antecedentes. Además, nuestros
+                vehículos son inspeccionados regularmente para garantizar la
+                seguridad de nuestros clientes.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Ofrecen servicios de taxi corporativo en zona fuera de Lima?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Sí, ofrecemos servicios fuera de Lima. Le recomendamos que
+                reserve con anticipación para garantizar la disponibilidad, o
+                ponerse en contacto con nuestro servicio al cliente para obtener
+                más información.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Es posible programar un viaje con antelación?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Sí, ofrecemos la opción de programar viajes con antelación a
+                través de nuestra aplicación o llamando o escribiendo a nuestro
+                servicio de atención al cliente.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo puedo obtener un recibo o factura por mis viajes?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Un recibo se enviará automáticamente a su correo electrónico
+                después de cada viaje en un plazo no mayor a 24 horas luego de
+                finalizado su servicio.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Qué hacer en caso de objetos olvidados en el taxi?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Si olvida algo en el taxi, comuníquese con nuestro servicio de
+                atención al cliente lo antes posible. Haremos todo lo posible
+                para localizar y devolver sus pertenencias.
+              </p>
+            </div>
+          </div>
+
+          <!-- Preguntas empresa -->
+          <div class="contenedor-preguntas" data-categoria="empresa">
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Tienen entregas a domicilio?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatum laborum porro voluptates, sequi aliquam mollitia!
+                Nostrum eius iure sapiente, voluptates soluta adipisci,
+                perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                doloribus.adipisicing elit. Voluptatum laborum porro voluptates,
+                sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates
+                soluta adipisci, perferendis voluptatibus eligendi vel saepe
+                harum. Consectetur, doloribus.adipisicing elit. Voluptatum
+                laborum porro voluptates, sequi aliquam mollitia! Nostrum eius
+                iure sapiente, voluptates soluta adipisci, perferendis
+                voluptatibus eligendi vel saepe harum. Consectetur, doloribus.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿En cuanto sale el envio a mi país?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatum laborum porro voluptates, sequi aliquam mollitia!
+                Nostrum eius iure sapiente, voluptates soluta adipisci,
+                perferendis voluptatibus eligendi vel saepe harum. Consectetur,
+                doloribus.adipisicing elit. Voluptatum laborum porro voluptates,
+                sequi aliquam mollitia! Nostrum eius iure sapiente, voluptates
+                soluta adipisci, perferendis voluptatibus eligendi vel saepe
+                harum. Consectetur, doloribus.
+              </p>
+            </div>
+          </div>
+
+          <!-- Preguntas conductor -->
+          <div class="contenedor-preguntas" data-categoria="conductor">
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuáles son las modalidades u horarios de trabajo?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Actualmente no contamos con modalidades u horarios de trabajo,
+                es libre y el conductor se conecta a la hora que cree mas
+                conveniente para hacer su ruta.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuánto es la comisión por servicio corporativo?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Manejamos una tabla de porcentajes.
+                <br />
+                - Desde 1 a 9,99 - 10% <br />
+                - Desde 10 a 19,99 - 15% <br />
+                - Desde 20 a 29,99 - 20% <br />
+                - Desde 30 a 59,99 - 25% <br />
+                - Desde 60 a 79,99 - 28% <br />
+                - Desde 80 a 99,99 - 30% <br />
+                - Desde 100 a más - 33%
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuánto es la de comisión por servicio delivery?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Para lo servicios de Cencosud el porcentaje es fijo 25% sin
+                importar cuantas horas realicen o el monto que tengan en total,
+                si se desea el pago al mismo dia, se le suma 3% de canje diario.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo instalo el aplicativo móvil?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                El app se descarga directamente desde el Play store.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo descargo el inductivo y/o manual sobre el uso de la app?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Actualmente nos encontramos estructurando el manual para uso del
+                app por lo que las inducciones o capacitaciones con respecto al
+                app, las realiza el mismo personal interno, sea flota o
+                monitoreo.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Si tengo gastos como parqueo o peaje los tengo que pagar yo?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Si, los costos de peajes y parqueos los paga el mismo conductor
+                al momento de realizar el servicio y al finalizar el servicio,
+                se agregan en los costos adicionales para que luego sean
+                devueltos al conductor de forma integra. NOTA: El porcentaje de
+                descuento aplicado a los servicios, es sobre la tarifa bruta de
+                los servicios mas no del total con peajes incluidos, a los
+                peajes o parqueos no se les aplica porcentaje.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo adiciono los conceptos de parqueo y peaje que haya asumido
+                a través de la app?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Mientras vas en servicio, se tiene la opción de “COSTOS” en el
+                app para adicionar los montos correspondientes a parqueo , peaje
+                y tiempo de espera, adicionalmente al intentar finalizar el
+                servicio, se muestra un mensaje en forma de pregunta como
+                recordatorio para ingresar costos adicionales.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Qué es la auto planificación?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                La autoplanificacion es una herramienta innovadora que hemos
+                implementado para que los conductores puedan ver los servicios
+                con anticipación y en determinados horarios y asi puedan
+                planificar su ruta de trabajo y eficientizar su tiempo, esta
+                opción permite tomar los servicios en horas especificas donde
+                abre la planificación y puedes ver los servicios disponibles.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo efectuó la auto planificación?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                En la aplicación tienes una opción que se llama
+                AUTOPLANIFICACION, ingresando a ella en los horarios estipulados
+                (consultar al área de flota los horarios de planificacion), se
+                pueden visualizar y tomar los servicios disponibles.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuáles son los horarios para efectuar la auto planificación?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Estos horarios en ocasiones sufren rotaciones para eficientizar
+                su uso pero actualmente tenemos los siguientes. <br />
+                - Apertura 12pm para visualizar servicios de entre 5pm y 9pm.
+                <br />
+                - Apertura 04pm para visualizar servicios de entre 9pm y 12am.
+                <br />
+                - Apertura 10pm para visualizar servicios de entre 4am y 9am del
+                día siguiente. <br />
+                - Apertura 11pm para visualizar servicios de entre 12am y 7am
+                deldía siguiente.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo me asigno para los servicios del fin de semana a través de
+                la app?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                El app tiene una opción para registrar los turnos de fin de
+                semana, aunque actualmente el fin de semana es libre y puedes
+                conectarte cuando desees, para visualizar los servicios debes
+                ingresar a la opción “FIN DE SEMANA” en el app y seleccionar los
+                días que estarás disponible.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuál es el procedimiento para postular los servicios al
+                momento?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Para postular a los servicios al momento, en tu pantalla
+                principal, debes colocarte como disponible y en la parte
+                superior, colocar la distancia a 60km. Ahí veras todos los
+                servicios disponibles en un rango de 3 horas desde la hora
+                actual, ejemplo, si la hora actual es las 12pm, podras
+                visualizar los servicios disponibles entre 12pm y 3pm
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                Como conductor, ¿Qué vestimenta debo usar?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Antes se mantenía el uniforme que constaba de camisa blanca,
+                pantalón de vestir negro, zapatos de vestir negro, saco y
+                corbata si fuese posible y se mantiene en gran parte esa
+                vestimenta pero también se da la opción de variar los colores
+                siempre y cuando la vestimenta sea formal.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuáles son las condiciones de presentación y seguridad del
+                vehículo?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                El vehículo debe estar en excelentes condiciones, sin raspones o
+                abolladuras y con los implementos de seguridad mínimos para
+                brindar servicio de movilidad, aire acondicionado, cinturón de
+                seguridad, botiquin de primeros auxilios, extintor, etc.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuántos servicios puedo realizar al día?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                La cantidad de servicios al dia depende en gran medida de la
+                experiencia del conductor, la disponibilidad que tenga para
+                estar conectado, el buen uso del app para ingresando a los
+                horarios de planificación y estando atentos a los servicios al
+                momento por postulación.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo debo efectuar la liquidación electrónica?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                El área de facturación, en cada quincena, facilita los montos a
+                facturar ya sean con igv o sin igv, de los cuales, con tu
+                contador o tu de manera personal, debes realizar las facturas
+                solicitadas, cargarlas al app y adicional, si fuese posible,
+                enviarlo al whatsapp de facturación para que quede constancia.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuánto es la comisión por canje y/o liquidación electrónica?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                La liquidación quincenal tiene 0% de comisión adicional,
+                mientras que la liquidación o canje diario tiene un adicional de
+                3%.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cómo envió las facturas emitidas a través de la app?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Las facturas emitidas deben ser cargadas al app en la opción
+                “FACTURACION” adicionalmente a ello, se tiene el whatsapp del
+                área de facturación por la que pueden enviar las facturas para
+                sustentar las facturas cargadas al app.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿En que casos debo emitir facturas con igv y sin igv?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Cuando el monto facturado en la quincena es menor a 500 soles,
+                entonces solo se emite factura sin igv. Cuando el monto
+                facturado en la quincena es mayor a 500 soles, entonces se emite
+                una factura por 350+igv y el resto de la facturación producida
+                sin igv.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Hasta que hora puedo efectuar las liquidaciones electrónicas
+                para que me puedan pagar de manera diaria?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                Los canjes diarios tienen 2 cortes disponibles <br />
+                - Lunes a viernes: <br />
+                - 1er corte 7:59am y se paga entre 8 y 10am <br />
+                - 2do corte 6:59pm y se paga entre las 7 y 9pm <br />
+                - Sábados único corte a la 1:59pm y se paga entre 2 y 4pm <br />
+                - Domingos único corte a las 4:59pm y se paga entre las 5 y 7pm
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Cuánto es el tiempo de espera por servicio al llegar al punto
+                de origen?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                El tiempo de espera puede variar según el lugar donde se ubique
+                el punto de inicio del servicio pero por lo general el tiempo de
+                espera de cortesia del usuario es de 10 minutos, después de eso,
+                se comienza a considerar todo como tiempo de espera adicional y
+                también tiene un costo adicional.
+              </p>
+            </div>
+            <div class="contenedor-pregunta">
+              <p class="pregunta">
+                ¿Qué es el desplazamiento y en que caso se aplica?
+                <img src="images/svg/ic_faq.svg" alt="Abrir Respuesta" />
+              </p>
+              <p class="respuesta">
+                El desplazamiento o falso flete es la acción de asumir un costo
+                por la cobertura de un servicio en el que el usuario no aborda
+                la unidad, los desplazamientos se dan por distintas situaciones
+                y al no salir el usuario y la unidad estar ubicada de forma
+                puntual, se reconoce un monto por haber coberturado el servicio
+                de forma puntual. <br />
+                Los montos de desplazamiento varian según el lugar donde se
+                encuentra el punto de inicio: <br />
+                - Zonas urbanas 10 soles. <br />
+                - Zonas interurbanas 20 soles. <br />
+                - Zonas periféricas y aeropuerto 30 soles. <br />
+                Son los montos de desplazamiento sin realizar el servicio
+                siempre y cuando el conductor se haya ubicado de manera puntual
+                y se cancele el servicio, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="footer">
+        <!-- Servicios -->
+
+        <div class="servicios-footer">
+          <h4>Servicios</h4>
+          <section>
+            <a href="/pasajero.html">Pasajero</a>
+            <a href="/empresa.html">Empresa</a>
+            <a href="/conductor.html">Conductor</a>
+            <a href="/preguntasfrecuente.html">Preguntas frecuentes</a>
+          </section>
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="contacto-footer">
+          <h4 class="contacto">Contacto</h4>
+          <h4>Visítanos</h4>
+          <section>
+            <p>Av. Prolongación Iquitos 2299, Lince, Lima.</p>
+          </section>
+          <h4>¿Necesitas ayuda?</h4>
+          <section>
+            <p>(01) 611-5555</p>
+          </section>
+          <h4>Correo electrónico</h4>
+          <section>
+            <p>servicios@taximonterrico.com</p>
+          </section>
+        </div>
+
+        <!-- Redes y app-->
+
+        <div class="redesyapp">
+          <div class="redes">
+            <a href="#">
+              <svg
+                width="24px"
+                height="24px"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="white"
+              >
+                <title>Facebook icon</title>
+                <path
+                  d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="footer-app">
+            <h4>Descarga la app</h4>
+            <div class="iconos">
+              <div class="footer-playstore">
+                <a
+                  class="footer-play-store"
+                  href="https://play.google.com/store/search?q=taxi+monterrico&c=apps"
+                  target="_blank"
+                  ><img src="/images/playstore.png" alt="PlayStore"
+                /></a>
+              </div>
+              <div class="footer-appstore">
+                <a
+                  class="footer-app-store"
+                  href="https://apps.apple.com/pe/app/taxi-monterrico/id1471171908"
+                  target="_blank"
+                  ><img src="/images/appstore.png" alt="AppStore"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terminos y condiciones -->
+
+      <div class="footer-terminos">
+        <div class="copyrightyterminos">
+          <p>MonterricoApp 2023 todos los derechos reservados.</p>
+          <a href="#">Términos y condiciones</a>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/categorias.js"></script>
+    <script src="/js/preguntasfrecuentes.js"></script>
+  </body>
+</html>
