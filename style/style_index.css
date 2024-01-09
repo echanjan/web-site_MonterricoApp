@@ -1,31 +1,39 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
 
 :root {
-  /*--web--*/
+  /*--colores--*/
   --color-principal: #08a33e;
   --color-principal-opacy: #d5f7dd;
   --color-secundario: #f8b80e;
   --color-white: #ffffff;
   --color-text: #122618;
+  /*--distancia en parrafo--*/
+  --line-height-title-header: 60px;
+  --line-height-subtitle-header: 35px;
+  --line-height-title-section: 40px;
+  --line-height-subtitle-section: 30px;
+  --line-height-text-section: 28px;
+  /*--tamaño texto--*/
   --font-size-nav: 16px;
   --font-size-title-header: 55px;
   --font-size-subtitle-header: 25px;
-  --line-height-title-header: 54px;
-  --line-height-subtitle-header: 35px;
-  --font-size-button: 20px;
-  --font-size-section-title: 40px;
-  --line-height-title-section: 40px;
-  --font-weight-title-section: 400;
-  --font-size-section-subtitle: 24px;
-  --line-height-subtitle-section: 30px;
-  --font-size-text: 20px;
-  --line-height-text-section: 28px;
   --font-size-header-section: 16px;
+  --font-size-section-title: 40px;
+  --font-size-section-subtitle: 24px;
+  --font-size-text: 18px;
+  --font-size-button: 18px;
   --font-size-footer: 16px;
+  /*--ancho texto--*/
+  --font-weight-title-header: 500;
+  --font-weight-title-section: 500;
+  --font-weight-subtitle-section: 500;
+  --font-weight-text: 300;
   --font-weight-footer-title: 400;
   --font-weight-footer-text: 100;
+  /*--sombra--*/
   --shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
   --shadow-intense: 0px 0px 13px rgba(160, 160, 160, 0.25);
+  /*--padding--*/
   --padding-x-large: 9%;
   --padding-large: 6%;
   --padding-short: 3%;
@@ -41,26 +49,15 @@
 
 body {
   display: block;
-  font-family: "Mulish", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   padding: 0%;
   margin: 0;
 }
 
-iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
 header,
 main {
   padding: 0% 15%;
-}
-
-main {
-  z-index: 0;
 }
 
 h1,
@@ -306,6 +303,7 @@ nav .mobile .links a:hover {
 .hero .title {
   color: var(--color-white);
   font-size: var(--font-size-title-header);
+  font-weight: var(--font-weight-title-header);
   line-height: var(--line-height-title-header);
 }
 
@@ -405,11 +403,13 @@ nav .mobile .links a:hover {
 .section-1S3P h1 {
   color: var(--color-text);
   font-size: var(--font-size-section-title);
+  font-weight: var(--font-weight-title-section);
 }
 
 .section-1S3P h3 {
   color: var(--color-text);
   font-size: var(--font-size-section-subtitle);
+  font-weight: var(--font-weight-subtitle-section);
   margin-bottom: 5px;
   line-height: var(--line-height-subtitle-section);
 }
@@ -418,6 +418,7 @@ nav .mobile .links a:hover {
   color: var(--color-text);
   margin: 20px 0px;
   font-size: var(--font-size-text);
+  font-weight: var(--font-weight-text);
   line-height: var(--line-height-text-section);
 }
 
@@ -443,7 +444,7 @@ nav .mobile .links a:hover {
   justify-content: center;
   align-items: center;
   font-size: var(--font-size-header-section);
-  font-weight: var(--font-weight-title-section);
+  font-weight: var(--font-weight-subtitle-section);
   width: 100%;
   max-width: 150px;
   height: 35px;
@@ -466,13 +467,15 @@ nav .mobile .links a:hover {
   width: 30vw;
   font-size: var(--font-size-text);
   line-height: var(--line-height-text-section);
+  font-weight: var(--font-weight-text);
 }
 
 .section-2S1P .text-2S1P h1,
 .section-2S2P .text-2S2P h1 {
   margin-top: 7%;
   color: var(--color-text);
-  font-size: var(--font-size-section-title);
+  font-size: var(--font-size-section-subtitle);
+  font-weight: var(--font-weight-title-section);
   line-height: var(--line-height-title-section);
 }
 
@@ -483,46 +486,20 @@ nav .mobile .links a:hover {
   line-height: var(--line-height-text-section);
 }
 
-/*--
-
-.section-2S1P a,
-.section-2S2P a {
-  display: flex;
-  align-items: center;
-  color: var(--color-principal);
-  font-size: var(--font-size-text);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.section-2S1P span,
-.section-2S2P span {
-  color: var(--color-principal);
-  font-weight: var(--font-weight-footer-title);
-  font-weight: 700;
-}
-
-.section-2S1P a:hover,
-.section-2S2P a:hover {
-  color: var(--color-text);
-}
---*/
-
 .enlace-2S1P,
 .enlace-2S2P {
   display: flex;
   align-items: center;
   color: var(--color-principal);
-  font-size: var(--font-size-text);
   text-decoration: none;
 }
 
 .enlace-2S1P a,
 .enlace-2S2P a {
   color: var(--color-principal);
-  font-size: var(--font-size-text);
   text-decoration: none;
-  font-weight: 600;
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-subtitle-section);
 }
 
 .enlace-2S1P:hover,
@@ -542,6 +519,7 @@ nav .mobile .links a:hover {
 
 .FAQ h1 {
   font-size: var(--font-size-section-title);
+  font-weight: var(--font-weight-title-header);
   margin-bottom: 4%;
   color: var(--color-text);
 }
@@ -588,6 +566,7 @@ nav .mobile .links a:hover {
   margin: 0;
   font-weight: 700;
   font-size: var(--font-size-section-subtitle);
+  font-weight: var(--font-weight-subtitle-section);
   color: var(--color-text);
   display: flex;
   justify-content: space-between;
@@ -611,6 +590,8 @@ nav .mobile .links a:hover {
 }
 
 .contenedor-pregunta.activa .respuesta {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-text);
   opacity: 1;
   margin-top: 20px;
 }
@@ -631,6 +612,8 @@ nav .mobile .links a:hover {
 }
 
 .button-preguntas a {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-subtitle-section);
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -671,7 +654,6 @@ nav .mobile .links a:hover {
 .btn-wsp:hover {
   background: #fff;
   color: #25d366;
-  
 }
 
 /*----------------------
@@ -792,31 +774,38 @@ footer {
 }
 
 /*-----------
-    1440
+    1500
 -------------*/
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
   :root {
-    /*--web--*/
+    /*--distancia en parrafo--*/
+    --line-height-title-header: 45px;
+    --line-height-subtitle-header: 25px;
+    --line-height-title-section: 35px;
+    --line-height-subtitle-section: 28px;
+    --line-height-text-section: 25px;
+    /*--tamaño texto--*/
     --font-size-nav: 16px;
     --font-size-title-header: 45px;
     --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --font-size-button: 20px;
-    --font-size-section-title: 30px;
-    --line-height-title-section: 35px;
-    --line-height-subtitle-header: 25px;
-    --font-weight-title-section: 400;
-    --font-size-section-subtitle: 22px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 18px;
-    --line-height-text-section: 25px;
     --font-size-header-section: 16px;
+    --font-size-section-title: 30px;
+    --font-size-section-subtitle: 22px;
+    --font-size-text: 18px;
+    --font-size-button: 18px;
     --font-size-footer: 16px;
+    /*--ancho texto--*/
+    --font-weight-title-header: 500;
+    --font-weight-title-section: 500;
+    --font-weight-subtitle-section: 500;
+    --font-weight-text: 300;
     --font-weight-footer-title: 400;
     --font-weight-footer-text: 100;
+    /*--sombra--*/
     --shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
     --shadow-intense: 0px 0px 13px rgba(160, 160, 160, 0.25);
+    /*--padding--*/
     --padding-x-large: 9%;
     --padding-large: 6%;
     --padding-short: 3%;
@@ -829,66 +818,46 @@ footer {
 
 @media screen and (max-width: 1280px) {
   :root {
-    /*--web--*/
-    --font-size-nav: 16px;
-    --font-size-title-header: 36px;
-    --font-size-subtitle-header: 18px;
+    /*--distancia en parrafo--*/
     --line-height-title-header: 35px;
     --line-height-subtitle-header: 25px;
-    --font-size-button: 18px;
-    --font-size-section-title: 28px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 22px;
+    --line-height-title-section: 35px;
     --line-height-subtitle-section: 28px;
-    --font-size-text: 18px;
     --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-    --shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
-    --shadow-intense: 0px 0px 13px rgba(160, 160, 160, 0.25);
-    --padding-x-large: 9%;
-    --padding-large: 6%;
-    --padding-short: 3%;
+    /*--tamaño texto--*/
+    --font-size-title-header: 36px;
   }
 }
 
 /*-----------
-    1240
+    1150
 -------------*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
   :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
+    /*--distancia en parrafo--*/
+    --line-height-title-header: 55px;
     --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
     --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
     --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
     --line-height-text-section: 25px;
+    /*--tamaño texto--*/
+    --font-size-nav: 16px;
+    --font-size-title-header: 50px;
+    --font-size-subtitle-header: 20px;
     --font-size-header-section: 16px;
+    --font-size-section-title: 30px;
+    --font-size-section-subtitle: 22px;
+    --font-size-text: 16px;
+    --font-size-button: 16px;
     --font-size-footer: 16px;
+    /*--ancho texto--*/
+    --font-weight-title-header: 500;
+    --font-weight-title-section: 500;
+    --font-weight-subtitle-section: 500;
+    --font-weight-text: 300;
     --font-weight-footer-title: 400;
     --font-weight-footer-text: 100;
-    --shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
-    --shadow-intense: 0px 0px 13px rgba(160, 160, 160, 0.25);
-    --padding-x-large: 9%;
-    --padding-large: 6%;
-    --padding-short: 3%;
   }
 
   main {
@@ -911,14 +880,6 @@ footer {
     padding-top: 0px;
   }
 
-  .hero .title {
-    display: none;
-  }
-
-  .hero .subtitle {
-    display: none;
-  }
-
   .text-hero-index {
     display: none;
   }
@@ -932,6 +893,8 @@ footer {
 
   .text-hide .title {
     font-size: var(--font-size-title-header);
+    font-weight: var(--font-weight-title-header);
+    line-height: var(--line-height-title-header);
   }
 
   .text-hide .subtitle {
@@ -945,34 +908,29 @@ footer {
 
 @media screen and (max-width: 850px) {
   :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
+    /*--distancia en parrafo--*/
+    --line-height-title-header: 40px;
+    --line-height-subtitle-header: 25px;
+    --line-height-title-section: 30px;
+    --line-height-subtitle-section: 28px;
+    --line-height-text-section: 25px;
+    /*--tamaño texto--*/
     --font-size-nav: 16px;
     --font-size-title-header: 40px;
     --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
     --font-size-header-section: 16px;
+    --font-size-section-title: 24px;
+    --font-size-section-subtitle: 20px;
+    --font-size-text: 16px;
+    --font-size-button: 16px;
     --font-size-footer: 16px;
+    /*--ancho texto--*/
+    --font-weight-title-header: 500;
+    --font-weight-title-section: 500;
+    --font-weight-subtitle-section: 500;
+    --font-weight-text: 300;
     --font-weight-footer-title: 400;
     --font-weight-footer-text: 100;
-    --shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
-    --shadow-intense: 0px 0px 13px rgba(160, 160, 160, 0.25);
-    --padding-x-large: 9%;
-    --padding-large: 6%;
-    --padding-short: 3%;
   }
 
   header,
@@ -1107,34 +1065,29 @@ footer {
 
 @media screen and (max-width: 600px) {
   :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
+    /*--distancia en parrafo--*/
+    --line-height-title-header: 40px;
+    --line-height-subtitle-header: 25px;
+    --line-height-title-section: 30px;
+    --line-height-subtitle-section: 28px;
+    --line-height-text-section: 25px;
+    /*--distancia en parrafo--*/
     --font-size-nav: 16px;
     --font-size-title-header: 40px;
     --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
     --font-size-header-section: 16px;
+    --font-size-section-title: 24px;
+    --font-size-section-subtitle: 20px;
+    --font-size-text: 16px;
+    --font-size-button: 16px;
     --font-size-footer: 16px;
+    /*--ancho texto--*/
+    --font-weight-title-header: 500;
+    --font-weight-title-section: 500;
+    --font-weight-subtitle-section: 500;
+    --font-weight-text: 300;
     --font-weight-footer-title: 400;
     --font-weight-footer-text: 100;
-    --shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
-    --shadow-intense: 0px 0px 13px rgba(160, 160, 160, 0.25);
-    --padding-x-large: 9%;
-    --padding-large: 6%;
-    --padding-short: 3%;
   }
 
   header {
@@ -1211,34 +1164,29 @@ footer {
 
 @media screen and (max-width: 400px) {
   :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
+    /*--distancia en parrafo--*/
+    --line-height-title-header: 40px;
+    --line-height-subtitle-header: 25px;
+    --line-height-title-section: 30px;
+    --line-height-subtitle-section: 28px;
+    --line-height-text-section: 25px;
+    /*--distancia en parrafo--*/
     --font-size-nav: 16px;
     --font-size-title-header: 40px;
     --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
     --font-size-header-section: 16px;
+    --font-size-section-title: 24px;
+    --font-size-section-subtitle: 20px;
+    --font-size-text: 16px;
+    --font-size-button: 16px;
     --font-size-footer: 16px;
+    /*--ancho texto--*/
+    --font-weight-title-header: 400;
+    --font-weight-title-section: 400;
+    --font-weight-subtitle-section: 500;
+    --font-weight-text: 300;
     --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-    --shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
-    --shadow-intense: 0px 0px 13px rgba(160, 160, 160, 0.25);
-    --padding-x-large: 9%;
-    --padding-large: 6%;
-    --padding-short: 3%;
+    --font-weight-footer-text: 100
   }
 
   .app img {

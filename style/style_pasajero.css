@@ -31,13 +31,14 @@
   align-self: flex-start;
 }
 
-.text-hero .title {
+.hero .title {
   color: var(--color-white);
   font-size: var(--font-size-title-header);
+  font-weight: var(--font-weight-title-header);
   line-height: var(--line-height-title-header);
 }
 
-.text-hero .subtitle {
+.hero .subtitle {
   margin: 0;
   color: var(--color-white);
   padding: 20px 0px 0px 0px; /* Ajusta según sea necesario */
@@ -64,6 +65,7 @@
 
 .title-3S3P h1 {
   font-size: var(--font-size-section-title);
+  font-weight: var(--font-weight-title-section);
 }
 
 .container::-webkit-scrollbar {
@@ -131,48 +133,36 @@
 .card p {
   margin: 0;
   font-size: var(--font-size-text);
-  font-weight: 400;
+  font-weight: var(--font-weight-text);
   color: var(--color-text);
   text-align: center;
 }
 
 .card .pax {
   font-size: var(--font-size-header-section);
-  font-weight: 800;
+  font-weight: var(--font-weight-title-header);
   margin-bottom: 20px;
 }
 
 /*-----------
-    1240
+1500
 -------------*/
 
-@media screen and (max-width: 1024px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
+@media screen and (max-width: 1500px) {
+}
 
+/*-----------
+    1280
+-------------*/
+
+@media screen and (max-width: 1280px) {
+}
+
+/*-----------
+    1150
+-------------*/
+
+@media screen and (max-width: 1150px) {
   main {
     padding-top: 0vb;
     z-index: 0;
@@ -228,32 +218,6 @@
 -------------*/
 
 @media screen and (max-width: 850px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
-
   /*----------------------
       1 SECTION 3 PARTES 
     -----------------------*/
@@ -295,32 +259,6 @@
 -------------*/
 
 @media screen and (max-width: 600px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
-
   header {
     padding: 0%;
   }
@@ -372,70 +310,43 @@
     border-radius: 20px;
   }
 
-
   /*----------------------
       2 SECTION 2 PARTE 
     -----------------------*/
-  
-    .section-2S2P .img-2S2P img,
-    .box-2S2P {
-      width: 90vw;
-    }
-  
-    /*--Categorias--*/
-  
-    .container .card {
-      flex: 200px 0 0;
-    }
-  }
 
-  /*----------------------
-    SLIDER 
------------------------*/
-
-  .box-logos {
-    .box-logos-slide img {
-      height: 20px;
-    }
+  .section-2S2P .img-2S2P img,
+  .box-2S2P {
+    width: 90vw;
   }
 
   /*--Categorias--*/
 
   .container .card {
-    flex: 250px 0 0;
+    flex: 200px 0 0;
   }
+}
+
+/*----------------------
+    SLIDER 
+-----------------------*/
+
+.box-logos {
+  .box-logos-slide img {
+    height: 20px;
+  }
+}
+
+/*--Categorias--*/
+
+.container .card {
+  flex: 250px 0 0;
+}
 
 /*-----------
       400
   -------------*/
 
 @media screen and (max-width: 400px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
-
   .app img {
     height: 50px;
   }

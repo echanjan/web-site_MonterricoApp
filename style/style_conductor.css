@@ -2,7 +2,7 @@
 @import url(/style/style_pasajero.css);
 
 nav .intranet {
-  width: 160px;
+  width: 180px;
 }
 
 /*----------------------
@@ -79,38 +79,25 @@ nav .intranet {
   display: flex;
 }
 
-
 /*-----------
-    1240
+    1500
 -------------*/
 
-@media screen and (max-width: 1024px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
+@media screen and (max-width: 1500px) {
+}
 
+/*-----------
+    1280
+-------------*/
+
+@media screen and (max-width: 1280px) {
+}
+
+/*-----------
+    1150
+-------------*/
+
+@media screen and (max-width: 1150px) {
   main {
     padding-top: 0vb;
     z-index: 0;
@@ -131,11 +118,7 @@ nav .intranet {
     padding-top: 0px;
   }
 
-  .text-hero .title {
-    display: none;
-  }
-
-  .text-hero .subtitle {
+  .text-hero-index {
     display: none;
   }
 
@@ -148,12 +131,13 @@ nav .intranet {
 
   .text-hide .title {
     font-size: var(--font-size-title-header);
+    font-weight: var(--font-weight-title-header);
+    line-height: var(--line-height-title-header);
   }
 
   .text-hide .subtitle {
     font-size: var(--font-size-subtitle-header);
   }
-  
 }
 
 /*-----------
@@ -161,33 +145,6 @@ nav .intranet {
 -------------*/
 
 @media screen and (max-width: 850px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-
-  }
-
   header,
   main {
     padding: 0% 10%;
@@ -213,16 +170,24 @@ nav .intranet {
       2 SECTION 2 PARTE 
     -----------------------*/
 
-  .section-2S2P {
-    padding: 4% 0% 4% 0%;
+  .section-1S3P .box-1S3P,
+  .section-2S1P {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-2S1P {
+    padding-top: var(--padding-large);
+    padding-bottom: var(--padding-large);
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .section-2S2P .list-2S2P {
-    margin-top: 20px 0 20px 0;
+  .section-2S1P .text-2S1P,
+  .section-2S2P .text-2S2P {
     display: flex;
     flex-direction: column;
+    align-self: center;
     justify-content: center;
     width: 100%;
   }
@@ -233,9 +198,14 @@ nav .intranet {
   }
 
   .section-2S1P .img-2S1P img,
-  .section-2S2P .img-2S1P img {
+  .section-2S2P .img-2S2P img {
     width: 80vw;
     border-radius: 20px;
+  }
+
+  .FAQ {
+    padding-top: var(--padding-large);
+    padding-bottom: var(--padding-x-large);
   }
 }
 
@@ -244,32 +214,6 @@ nav .intranet {
 -------------*/
 
 @media screen and (max-width: 600px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
-
   header {
     padding: 0%;
   }
@@ -327,32 +271,6 @@ nav .intranet {
   -------------*/
 
 @media screen and (max-width: 400px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
-
   .app img {
     height: 50px;
   }

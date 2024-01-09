@@ -76,38 +76,25 @@
   }
 }
 
-
 /*-----------
-    1240
+    1500
 -------------*/
 
-@media screen and (max-width: 1024px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
+@media screen and (max-width: 1500px) {
+}
 
+/*-----------
+    1280
+-------------*/
+
+@media screen and (max-width: 1280px) {
+}
+
+/*-----------
+    1150
+-------------*/
+
+@media screen and (max-width: 1150px) {
   main {
     padding-top: 0vb;
     z-index: 0;
@@ -137,7 +124,7 @@
   }
 
   .text-hide {
-    padding-bottom: var(--padding-short);;
+    padding-bottom: var(--padding-short);
     display: flex;
     flex-direction: column;
     color: var(--color-text);
@@ -157,45 +144,6 @@
 -------------*/
 
 @media screen and (max-width: 850px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
-
-  header,
-  main {
-    padding: 0% 10%;
-  }
-
-  .app {
-    padding: 3% 0%;
-  }
-
-  .app img {
-    height: 60px;
-  }
-
   /*----------------------
       1 SECTION 3 PARTES 
     -----------------------*/
@@ -210,32 +158,6 @@
 -------------*/
 
 @media screen and (max-width: 600px) {
-  :root {
-    /*--web--*/
-    --color-principal: #08a33e;
-    --color-principal-opacy: #d5f7dd;
-    --color-secundario: #f8b80e;
-    --color-white: #ffffff;
-    --color-text: #122618;
-    --font-size-nav: 16px;
-    --font-size-title-header: 40px;
-    --font-size-subtitle-header: 20px;
-    --line-height-title-header: 40px;
-    --line-height-subtitle-header: 25px;
-    --font-size-button: 16px;
-    --font-size-section-title: 24px;
-    --font-weight-title-section: 400;
-    --line-height-title-section: 30px;
-    --font-size-section-subtitle: 20px;
-    --line-height-subtitle-section: 28px;
-    --font-size-text: 16px;
-    --line-height-text-section: 25px;
-    --font-size-header-section: 16px;
-    --font-size-footer: 16px;
-    --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100;
-  }
-
   header {
     padding: 0%;
   }
@@ -296,40 +218,14 @@
       height: 20px;
     }
   }
+}
 
-  /*-----------
+/*-----------
       400
   -------------*/
 
-  @media screen and (max-width: 400px) {
-    :root {
-      /*--web--*/
-      --color-principal: #08a33e;
-      --color-principal-opacy: #d5f7dd;
-      --color-secundario: #f8b80e;
-      --color-white: #ffffff;
-      --color-text: #122618;
-      --font-size-nav: 16px;
-      --font-size-title-header: 40px;
-      --font-size-subtitle-header: 20px;
-      --line-height-title-header: 40px;
-      --line-height-subtitle-header: 25px;
-      --font-size-button: 16px;
-      --font-size-section-title: 24px;
-      --font-weight-title-section: 400;
-      --line-height-title-section: 30px;
-      --font-size-section-subtitle: 20px;
-      --line-height-subtitle-section: 28px;
-      --font-size-text: 16px;
-      --line-height-text-section: 25px;
-      --font-size-header-section: 16px;
-      --font-size-footer: 16px;
-      --font-weight-footer-title: 400;
-      --font-weight-footer-text: 100;
-    }
-
-    .app img {
-      height: 50px;
-    }
+@media screen and (max-width: 400px) {
+  .app img {
+    height: 50px;
   }
 }
