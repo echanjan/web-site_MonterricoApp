@@ -24,7 +24,6 @@
 
 .text-hero {
   width: 90%;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Alinea los elementos al borde izquierdo */

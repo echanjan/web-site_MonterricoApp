@@ -1,0 +1,41 @@
+@import url(/style/style_index.css);
+
+.politicas {
+}
+
+.politicas h1,
+.politicas h2,
+.politicas h3 {
+  color: var(--color-principal);
+}
+
+.politicas p {
+  color: var(--color-text);
+}
+
+.politicas h1 {
+  font-size: var(--font-size-section-title);
+  font-weight: var(--font-weight-title-section);
+  padding: 2% 0% 1% 0%;
+}
+
+.politicas h2 {
+  font-size: var(--font-size-section-subtitle);
+  font-weight: var(--font-weight-title-section);
+  padding: 2% 0% 1% 0%;
+}
+
+.politicas h3 {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-title-section);
+  padding: 2% 0% 1% 0%;
+}
+
+.politicas p {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-text);
+}
+
+.politicas .acepta {
+  padding-bottom: var(--padding-large);
+}

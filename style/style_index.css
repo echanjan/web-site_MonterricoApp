@@ -262,11 +262,11 @@ nav .mobile .links a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center; /* Centra verticalmente */
   background-image: url("/images/hero-index.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   min-width: 100%;
   min-height: 250px;
@@ -275,29 +275,12 @@ nav .mobile .links a:hover {
 }
 
 .text-hero {
+  width: 90%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-self: center; /* Centrar horizontalmente en el contenedor .header */
+  align-items: center; /* Alinea los elementos al borde izquierdo */
+  align-self: center;
   padding: 3%;
-}
-
-.text-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center; /* Centrar horizontalmente en el contenedor .header */
-  padding: 3%;
-}
-
-.text-hero-index {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center; /* Centrar horizontalmente en el contenedor .header */
-  padding: 3%;
-  background-color: rgba(30, 30, 30, 0.5);
-  border-radius: 20px;
 }
 
 .hero .title {
@@ -310,7 +293,7 @@ nav .mobile .links a:hover {
 .hero .subtitle {
   margin: 0;
   color: var(--color-white);
-  padding: 0px 50px 0px 50px;
+  padding: 0px 0px 0px 50px;
   font-size: var(--font-size-subtitle-header);
   line-height: var(--line-height-subtitle-header);
 }
@@ -880,7 +863,7 @@ footer {
     padding-top: 0px;
   }
 
-  .text-hero-index {
+  .text-hero {
     display: none;
   }
 
@@ -1186,7 +1169,7 @@ footer {
     --font-weight-subtitle-section: 500;
     --font-weight-text: 300;
     --font-weight-footer-title: 400;
-    --font-weight-footer-text: 100
+    --font-weight-footer-text: 100;
   }
 
   .app img {
