@@ -3,26 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MonterricoApp - Conductor</title>
+    <title>MonterricoApp - Empresa</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!--
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"); 
-    </style>
-    -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style/style_conductor.css" />
+    <link rel="stylesheet" href="/style/style_contacta.css" />
     <script
       src="https://kit.fontawesome.com/eb496ab1a0.js"
       crossorigin="anonymous"
@@ -32,7 +24,6 @@
   <body>
     <header>
       <!--NAV-->
-
       <nav>
         <div class="mobile">
           <div class="header">
@@ -61,7 +52,7 @@
         </div>
 
         <div class="icono">
-          <a href="/index.html">
+          <a href="index.html">
             <img
               src="/images/logotipoMonterrico_512.png"
               width="140px"
@@ -70,9 +61,7 @@
           </a>
         </div>
         <ul>
-          <li>
-            <a href="/pasajero.html" class="link link-hide">Pasajero</a>
-          </li>
+          <li><a href="/pasajero.html" class="link link-hide">Pasajero</a></li>
           <li>
             <a href="/empresa.html" class="link link-hide">Corporativo</a>
           </li>
@@ -91,65 +80,79 @@
 
         <ul>
           <li>
-            <a href="#" target="_blank" class="intranet"
-              >Quiero ser conductor</a
+            <a
+              href="https://intranet.taximonterrico.pe/"
+              target="_blank"
+              class="intranet"
+              >Intranet</a
             >
           </li>
         </ul>
       </nav>
-
       <!--NAV-->
     </header>
-
     <!-- MAIN -->
-
     <main>
       <!-- Hero -->
-
       <div class="text-hide">
-        <h1 class="title">
-          Conduce a tu ritmo, <br />
-          gana tiempo y dinero
-        </h1>
+        <h1 class="title">Optimiza tu gestión</h1>
         <p class="subtitle">
-          Descubre el destino de tus pasajeros antes de aceptar. Retira tus
-          ganancias diariamente, tú tienes el control.
+          Desde nuestra plataforma única, toma el control total de tus servicios
+          de transporte.
         </p>
+        <p>Contacta con nosotros</p>
       </div>
       <div class="hero">
-        <div class="text-hero">
-          <h1 class="title">
-            Conduce a tu ritmo, <br />
-            gana tiempo y dinero
-          </h1>
-          <p class="subtitle">
-            Descubre el destino de tus pasajeros antes de aceptar. <br />
-            Retira tus ganancias diariamente, tú tienes el control.
-          </p>
-        </div>
-      </div>
+        <form id="contactForm">
+          <div id="mensaje" class="mensaje"></div>
+          <!-- Nuevo contenedor para el mensaje -->
+          <div class="text-form">
+            <h1>Contacta con el equipo comercial</h1>
+            <p>Envía tu información y nos comunicaremos contigo.</p>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            /><br />
 
-      <!--Descarga el app-->
+            <input
+              type="text"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            /><br />
 
-      <div class="app">
-        <div class="btn-playstore">
-          <a
-            class="play-store"
-            href="https://play.google.com/store/apps/details?id=tmsystem.com.tmdriverapp&hl=es_PY"
-            target="_blank"
-            ><img src="/images/playstore.png" alt="PlayStore"
-          /></a>
-        </div>
-        <!--
-        <div class="btn-appstore">
-          <a
-            class="app-store"
-            href="https://apps.apple.com/pe/app/taxi-monterrico/id1471171908"
-            target="_blank"
-            ><img src="/images/appstore.png" alt="AppStore"
-          /></a>
-        </div>
-        -->
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo corporativo"
+              title="Ingresa tu correo corporativo"
+              required
+            /><br />
+
+            <input
+              type="tel"
+              name="numero"
+              placeholder="Celular"
+              pattern="[0-9]{9}"
+              title="Ingresa un número de celular válido de 9 dígitos"
+              required
+            /><br />
+
+            <input
+              type="text"
+              name="empresa"
+              placeholder="Empresa"
+              title="Ingresa el nombre de empresa"
+              required
+            /><br />
+
+            <input type="submit" name="send" value="Enviar" />
+          </div>
+        </form>
       </div>
 
       <!-- 1 SECTION 3 PARTES -->
@@ -157,64 +160,32 @@
       <section class="section-1S3P">
         <div class="box-1S3P">
           <div class="box-1P">
-            <img src="/images/svg/flex.svg" alt="" />
-            <h3>Flexibilidad horaria</h3>
+            <img src="/images/svg/rules.svg" alt="" />
+            <h3>Diseña tus propias reglas</h3>
             <p>
-              Con nuestro servicio, tú decides cuándo estás al volante. Sé el
-              dueño de tu tiempo y disfruta de la flexibilidad para conducir
-              cuando mejor te convenga.
+              Registra usuarios, controla servicios y administra centros de
+              costos y áreas según tus necesidades únicas. Personalizar nuestros
+              servicios de acuerdo con tus requerimientos.
             </p>
           </div>
           <div class="box-2P">
-            <img src="/images/svg/money.svg" alt="" />
-            <h3>Canje diario</h3>
+            <img src="/images/svg/control.svg" alt="" />
+            <h3>Controla tus gastos</h3>
             <p>
-              ¿Necesitas ingresos extra? Cajea a diario de tus ganancias. Tu
-              esfuerzo se traduce directamente en recompensas financieras ¡Así
-              que gana a tu propio ritmo!
+              Mantén un seguimiento detallado de los consumos de tu empresa,
+              establece límites de uso y cuenta con las herramientas necesarias
+              para un control efectivo.
             </p>
           </div>
           <div class="box-3P">
-            <img src="/images/svg/lock.svg" alt="" />
-            <h3>Seguridad y transparencia</h3>
+            <img src="/images/svg/vip.svg" alt="" />
+            <h3>Servicio personalizado</h3>
             <p>
-              Llevarás clientes corporativos. Conoce el destino, planifica tu
-              ruta y disfruta de un viaje tranquilo. Te ofrecemos la confianza
-              que necesitas en cada trayecto. ¡Conduce con comodidad y
-              seguridad!
+              Disfruta de atención exclusiva de ejecutivos dedicados a tu
+              empresa, diseñado para facilitar tu experiencia y asegurar que
+              aproveches al máximo nuestros servicios.
             </p>
           </div>
-        </div>
-      </section>
-
-      <!-- 2 SECTION 2 PARTE -->
-
-      <!-- Requisitos -->
-
-      <section class="section-2S2P">
-        <div class="box-2S2P">
-          <div class="title-2S2P">
-            <h5>Requisitos</h5>
-          </div>
-          <div class="text-2S2P">
-            <h1>¿Cómo soy parte de MonterricoApp?</h1>
-            <ul class="list-2S2P">
-              <li>No tener antecentes</li>
-              <li>Vestimenta formal</li>
-              <li>Vehículo máximo 8 años de antiguedad</li>
-              <li>Vehículo en optimas condiciones</li>
-              <li>Botiquin y extintor en el vehículo</li>
-            </ul>
-          </div>
-          <div class="enlace-2S2P">
-            <a target="_blank" href="https://wa.me/51989063631"
-              >Más información
-            </a>
-            <span class="material-icons">&#xe409;</span>
-          </div>
-        </div>
-        <div class="img-2S2P">
-          <img src="/images/requisitosconductor.jpg" alt="conductor" />
         </div>
       </section>
 
@@ -225,39 +196,34 @@
           <div class="contenedor-preguntas">
             <div class="contenedor-pregunta">
               <p class="pregunta">
-                Como conductor, ¿Qué vestimenta debo usar?
+                ¿Ofrecen crédito corporativo?
                 <img src="/images/svg/ic_faq.svg" alt="Abrir respuesta" />
               </p>
               <p class="respuesta">
-                Antes se mantenía el uniforme que constaba de camisa blanca,
-                pantalón de vestir negro, zapatos de vestir negro, saco y
-                corbata si fuese posible y se mantiene en gran parte esa
-                vestimenta pero también se da la opción de variar los colores
-                siempre y cuando la vestimenta sea formal.
+                Sí, nos especializamos en servicios de traslado corporativo y
+                proporcionamos crédito a nuestros clientes.
               </p>
             </div>
             <div class="contenedor-pregunta">
               <p class="pregunta">
-                ¿Cuáles son las condiciones de presentación y seguridad del
-                vehículo?
+                ¿Cuáles son los requisitos para obtener crédito corporativo?
                 <img src="/images/svg/ic_faq.svg" alt="Abrir respuesta" />
               </p>
               <p class="respuesta">
-                El vehículo debe estar en excelentes condiciones, sin raspones o
-                abolladuras y con los implementos de seguridad mínimos para
-                brindar servicio de movilidad, aire acondicionado, cinturón de
-                seguridad, botiquin de primeros auxilios, extintor, etc.
+                Para adquirir crédito corporativo con Monterrico, es necesario
+                contar con una ficha RUC. Es importante destacar que no debe
+                existir cobranza coactiva.
               </p>
             </div>
             <div class="contenedor-pregunta">
               <p class="pregunta">
-                ¿Cuáles son las modalidades u horarios de trabajo?
+                ¿Están operativos las 24 horas y los feriados?
                 <img src="/images/svg/ic_faq.svg" alt="Abrir respuesta" />
               </p>
               <p class="respuesta">
-                Actualmente no contamos con modalidades u horarios de trabajo,
-                es libre y el conductor se conecta a la hora que cree mas
-                conveniente para hacer su ruta.
+                Sí, puedes solicitar nuestros servicios en cualquier momento y
+                día del año. Contamos con asesores disponibles las 24 horas, los
+                365 días del año.
               </p>
             </div>
           </div>
@@ -267,31 +233,36 @@
       <div class="button-preguntas">
         <a href="/preguntasfrecuente.html"><p>Ver más</p></a>
       </div>
-      
+
       <!-- BOTON WHATSAPP 
 
       <a href="https://wa.me/51989063650" class="btn-wsp" target="_blank">
         <i class="fa fa-whatsapp icono"></i>
       </a>    -->
       <script>
-        window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":"Chatea con nosotros"};
-        (function(d,t) {
-          var BASE_URL="https://atc.3w.pe";
-          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src=BASE_URL+"/packs/js/sdk.js";
+        window.chatwootSettings = {
+          position: "right",
+          type: "standard",
+          launcherTitle: "Chatea con nosotros",
+        };
+        (function (d, t) {
+          var BASE_URL = "https://atc.3w.pe";
+          var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+          g.src = BASE_URL + "/packs/js/sdk.js";
           g.defer = true;
           g.async = true;
-          s.parentNode.insertBefore(g,s);
-          g.onload=function(){
+          s.parentNode.insertBefore(g, s);
+          g.onload = function () {
             window.chatwootSDK.run({
-              websiteToken: 'uhcKXfrTAtXLuZpitUMq8GJP',
-              baseUrl: BASE_URL
-            })
-          }
-        })(document,"script");
+              websiteToken: "uhcKXfrTAtXLuZpitUMq8GJP",
+              baseUrl: BASE_URL,
+            });
+          };
+        })(document, "script");
       </script>
     </main>
-    
+
     <!-- FOOTER -->
 
     <footer>
@@ -383,5 +354,13 @@
     </footer>
     <script src="/js/main.js"></script>
     <script src="/js/preguntasfrecuentes.js"></script>
+    <script src="/js/apiIntegration.js"></script>
+
+    <div id="overlay"></div>
+    <div id="popupRegistroEnviado">
+      <!-- Contenido del popup -->
+      <p>Muy pronto nos comunicaremos contigo.</p>
+      <button onclick="cerrarPopup()">Cerrar</button>
+    </div>
   </body>
 </html>

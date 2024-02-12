@@ -100,6 +100,7 @@
           Desde nuestra plataforma única, toma el control total de tus servicios
           de transporte.
         </p>
+        <p>Contacta con nosotros</p>
       </div>
       <div class="hero">
         <div class="text-hero">
@@ -108,6 +109,9 @@
             Desde nuestra plataforma única, <br />
             toma el control total de tus servicios de transporte.
           </p>
+          <a href="/contacta.html" class="contacta">Contacta con nosotros
+            <span class="material-icons">&#xe409;</span>
+          </a>
         </div>
       </div>
 
@@ -190,7 +194,7 @@
               control preciso de tus gastos corporativos
             </p>
             <div class="enlace-2S1P">
-              <a arget="_blank" href="https://intranet.taximonterrico.pe/"
+              <a target="_blank" href="https://intranet.taximonterrico.pe/"
                 >Más información
               </a>
               <span class="material-icons">&#xe409;</span>
@@ -274,11 +278,28 @@
         <a href="/preguntasfrecuente.html"><p>Ver más</p></a>
       </div>
 
-      <!-- BOTON WHATSAPP -->
+      <!-- BOTON WHATSAPP 
 
       <a href="https://wa.me/51989063650" class="btn-wsp" target="_blank">
         <i class="fa fa-whatsapp icono"></i>
-      </a>
+      </a>    -->
+      <script>
+        window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":"Chatea con nosotros"};
+        (function(d,t) {
+          var BASE_URL="https://atc.3w.pe";
+          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=BASE_URL+"/packs/js/sdk.js";
+          g.defer = true;
+          g.async = true;
+          s.parentNode.insertBefore(g,s);
+          g.onload=function(){
+            window.chatwootSDK.run({
+              websiteToken: 'uhcKXfrTAtXLuZpitUMq8GJP',
+              baseUrl: BASE_URL
+            })
+          }
+        })(document,"script");
+      </script>
     </main>
 
     <!-- FOOTER -->

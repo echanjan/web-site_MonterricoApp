@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MonterricoApp</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -200,12 +200,38 @@
         </div>
       </section>
 
-      <!-- BOTON WHATSAPP -->
+      <!-- BOTON WHATSAPP 
 
       <a href="https://wa.me/51989063650" class="btn-wsp" target="_blank">
         <i class="fa fa-whatsapp icono"></i>
       </a>
+
+      -->
     </main>
+
+    <script>
+      window.chatwootSettings = {
+        position: "right",
+        type: "standard",
+        launcherTitle: "Chatea con nosotros",
+      };
+      (function (d, t) {
+        var BASE_URL = "https://atc.3w.pe";
+        var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src = BASE_URL + "/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function () {
+          window.chatwootSDK.run({
+            websiteToken: "uhcKXfrTAtXLuZpitUMq8GJP",
+            baseUrl: BASE_URL,
+          });
+        };
+      })(document, "script");
+    </script>
+
     <!-- FOOTER -->
 
     <footer>

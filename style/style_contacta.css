@@ -1,0 +1,269 @@
+@import url(/style/style_index.css);
+@import url(/style/style_pasajero.css);
+
+/*----------------------
+    HERO 
+-----------------------*/
+
+.text-hide {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  background-image: url(/images/hero_contacta.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 250px;
+  height: 38vw;
+}
+
+/*-- form --*/
+
+form {
+  width: 25%;
+  margin: 20px auto;
+  margin-left: 50px;
+  background-color: var(--color-white);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-form h1 {
+  font-size: var(--font-size-subtitle-header);
+  font-weight: var(--font-weight-subtitle-section);
+  color: var(--color-text);
+}
+
+.text-form p {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-text);
+  color: var(--color-text);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+  font-size: var(--font-size-form);
+  font-weight: var(--font-weight-text);
+  color: var(--color-text);
+  padding: 15px 15px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-grey);
+  background-color: var(--color-grey);
+  border-radius: 10px;
+  text-align: left;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--color-grey-dark);
+  transition: border-color 1s ease;
+}
+
+input[type="submit"] {
+  background-color: var(--color-principal-opacy);
+  color: var(--color-principal);
+  padding: 15px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--color-principal);
+  color: var(--color-white);
+}
+
+/* Estilos del popup */
+#popupRegistroEnviado {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-intense);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+}
+
+#popupRegistroEnviado p {
+  font-size: var(--font-size-text);
+  color: var(--font-size-text);
+}
+
+#popupRegistroEnviado button {
+  background-color: var(--color-principal-opacy);
+  color: var(--color-principal);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#popupRegistroEnviado button:hover {
+  background-color: var(--color-principal);
+  color: var(--color-white);
+}
+
+/* Estilo de fondo oscurecido alrededor del popup */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+
+/*-----------
+    1500
+-------------*/
+
+@media screen and (max-width: 1500px) {
+}
+
+/*-----------
+    1280
+-------------*/
+
+@media screen and (max-width: 1280px) {
+}
+
+/*-----------
+    1150
+-------------*/
+
+@media screen and (max-width: 1150px) {
+  main {
+    padding-top: 0vb;
+    z-index: 0;
+  }
+
+  /*NAV*/
+  nav .link-hide {
+    display: none;
+  }
+
+  nav .more {
+    display: flex;
+  }
+
+  /*HERO*/
+
+  .box-hero {
+    padding-top: 0px;
+  }
+}
+
+/*-----------
+    850
+-------------*/
+
+@media screen and (max-width: 850px) {
+  /*----------------------
+      1 SECTION 3 PARTES 
+    -----------------------*/
+
+  .box-1S3P [class^="box-"] {
+    padding: 0;
+  }
+}
+
+/*-----------
+    600
+-------------*/
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0%;
+  }
+
+  main {
+    padding: 0% 5%;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  nav ul,
+  nav .icono {
+    display: none;
+  }
+
+  nav .mobile {
+    display: block;
+  }
+
+  /*----------------------
+      HERO 
+    -----------------------*/
+
+  .hero {
+    width: 90%;
+    height: 50vw;
+  }
+
+  /*----------------------
+      1 SECTION 3 PARTES 
+    -----------------------*/
+
+  .section-2S1P,
+  .section-2S2P {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box-2S1P {
+    width: 90vw;
+    margin-top: 5vw;
+  }
+
+  .section-2S1P .img-2S1P img,
+  .section-2S2P .img-2S1P img {
+    width: 90vw;
+    border-radius: 20px;
+  }
+
+  /*----------------------
+    SLIDER 
+-----------------------*/
+
+  .box-logos {
+    .box-logos-slide img {
+      height: 20px;
+    }
+  }
+}
+
+/*-----------
+      400
+  -------------*/
+
+@media screen and (max-width: 400px) {
+  .app img {
+    height: 50px;
+  }
+}

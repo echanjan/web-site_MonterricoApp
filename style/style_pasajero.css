@@ -1,5 +1,8 @@
 @import url(/style/style_index.css);
 
+
+
+
 /*----------------------
     HERO 
 -----------------------*/
@@ -142,6 +145,8 @@
   font-weight: var(--font-weight-title-header);
   margin-bottom: 20px;
 }
+
+
 
 /*-----------
 1500
@@ -329,11 +334,6 @@
     SLIDER 
 -----------------------*/
 
-.box-logos {
-  .box-logos-slide img {
-    height: 20px;
-  }
-}
 
 /*--Categorias--*/
 

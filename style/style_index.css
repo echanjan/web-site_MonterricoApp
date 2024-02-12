@@ -7,6 +7,8 @@
   --color-secundario: #f8b80e;
   --color-white: #ffffff;
   --color-text: #122618;
+  --color-grey: #efefef;
+  --color-grey-dark: #c2c2c2;
   /*--distancia en parrafo--*/
   --line-height-title-header: 60px;
   --line-height-subtitle-header: 35px;
@@ -14,6 +16,7 @@
   --line-height-subtitle-section: 30px;
   --line-height-text-section: 28px;
   /*--tamaño texto--*/
+  --font-size-form: 14px;
   --font-size-nav: 16px;
   --font-size-title-header: 55px;
   --font-size-subtitle-header: 25px;
@@ -59,6 +62,7 @@ header,
 main {
   padding: 0% 15%;
 }
+
 
 h1,
 h2,
@@ -306,7 +310,7 @@ nav .mobile .links a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: var(--padding-large);
+  padding-top: var(--padding-short);
   padding-bottom: var(--padding-short);
 }
 
@@ -648,7 +652,7 @@ nav .mobile .links a:hover {
 footer {
   background-color: var(--color-text);
   min-width: 100%;
-  height: 100%px;
+  height: 100%;
 }
 
 .footer {
